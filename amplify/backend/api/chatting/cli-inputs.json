@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/chatendpoint": {
+      "name": "/chatendpoint",
+      "lambdaFunction": "materializeprojf4eae319",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplifyc5ffbffb11584-staging-185323-authRole",
+      "UnauthRoleArn": "arn:aws:iam::988794187557:role/amplify-amplifyc5ffbffb11584-staging-185323-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::988794187557:role/amplify-amplifyc5ffbffb11584-staging-185323-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-amplifyc5ffbffb11584-staging-185323-deployment",
+      "UnauthRoleName": "amplify-amplifyc5ffbffb11584-staging-185323-unauthRole",
+      "StackName": "amplify-amplifyc5ffbffb11584-staging-185323",
+      "StackId": "arn:aws:cloudformation:us-east-2:988794187557:stack/amplify-amplifyc5ffbffb11584-staging-185323/e5ff9390-1064-11ee-8783-06efbaee968b",
+      "AmplifyAppId": "d2sfrl26lha4iz",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-amplifyc5ffbffb11584-staging-185323-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    },
+    "categories": {
+      "auth": {
+        "Materializeproj": {}
+      },
+      "function": {
+        "materializeproj29e38450": {
+          "secretsPathAmplifyAppId": "d2sfrl26lha4iz",
+          "deploymentBucketName": "amplify-amplifyc5ffbffb11584-staging-185323-deployment",
+          "s3Key": "amplify-builds/materializeproj29e38450-653456686c635561312f-build.zip"
+        },
+        "materializeprojbcb1b0f9": {},
+        "materializeprojf4eae319": {
+          "deploymentBucketName": "amplify-amplifyc5ffbffb11584-staging-185323-deployment",
+          "s3Key": "amplify-builds/materializeprojf4eae319-397641483844746d5443-build.zip"
+        }
+      },
+      "api": {
+        "apib8cc472c": {},
+        "chatting": {}
+      }
+    }
+  }
+}

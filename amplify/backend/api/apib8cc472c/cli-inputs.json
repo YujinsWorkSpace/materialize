@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/webhook": {
+      "name": "/webhook",
+      "lambdaFunction": "materializeproj29e38450",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

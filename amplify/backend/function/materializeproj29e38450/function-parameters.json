@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "auth": {
+      "Materializeproj": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ]
+    }
+  },
+  "lambdaLayers": [],
+  "secretNames": [
+    "stripe_key"
+  ]
+}

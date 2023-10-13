@@ -1,0 +1,124 @@
+{
+  "api": {
+    "apib8cc472c": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "materializeproj29e38450"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    },
+    "chatting": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "materializeprojf4eae319"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "auth": {
+    "Materializeproj": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [
+            "REQUIRES_LOWERCASE",
+            "REQUIRES_NUMBERS"
+          ],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [],
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
+    }
+  },
+  "function": {
+    "materializeproj29e38450": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributes": [
+            "UserPoolId"
+          ],
+          "category": "auth",
+          "resourceName": "Materializeproj"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "materializeprojf4eae319": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_materializeproj29e38450_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "materializeproj29e38450"
+        }
+      ]
+    },
+    "AMPLIFY_function_materializeproj29e38450_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "materializeproj29e38450"
+        }
+      ]
+    },
+    "AMPLIFY_function_materializeproj29e38450_secretsPathAmplifyAppId": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "materializeproj29e38450"
+        }
+      ]
+    },
+    "AMPLIFY_function_materializeprojf4eae319_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "materializeprojf4eae319"
+        }
+      ]
+    },
+    "AMPLIFY_function_materializeprojf4eae319_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "materializeprojf4eae319"
+        }
+      ]
+    }
+  }
+}
